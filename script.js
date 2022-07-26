@@ -174,3 +174,12 @@ checkbox.addEventListener('change', (event) => {
     alert('not checked');
   }
 })
+
+const data = {
+    gender: 0, // How do you discribe yourself: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
+    sexualOrientation: 0, // Do you consider yourself to be: [0]Heterosexual or Straight, [1]Gay, [2]Lesbian, [3]Bisexual
+    partnerGender: 0, // How do you discribe partner: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
+    stiKit: 0, // Do you want to include an STI kit: [0]No, [1]Yes
+    expectation: 0, // Rate your expectation for long relationship: [0]Not at all, [1]Probably, [2]Really love to.
+    price: 0, // Choose a price-range for your box: [0]100~200, [1]200~300, [2]200~300, [3]300+
+}
