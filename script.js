@@ -165,21 +165,22 @@ var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
 /////////////////////////////////// Handle Form ///////////////////////////////////
 
-const checkbox = document.getElementById('defaultCheck1')
 
-checkbox.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    alert('checked');
-  } else {
-    alert('not checked');
-  }
-})
+const formPages = ["terms", "genders", "attractiveness"]
+const formPagesData = {
+    terms: {},
+    genders: {},
+    attractiveness: {}
+}
 
 const data = {
-    gender: 0, // How do you discribe yourself: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
-    sexualOrientation: 0, // Do you consider yourself to be: [0]Heterosexual or Straight, [1]Gay, [2]Lesbian, [3]Bisexual
-    partnerGender: 0, // How do you discribe partner: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
-    stiKit: 0, // Do you want to include an STI kit: [0]No, [1]Yes
-    expectation: 0, // Rate your expectation for long relationship: [0]Not at all, [1]Probably, [2]Really love to.
-    price: 0, // Choose a price-range for your box: [0]100~200, [1]200~300, [2]200~300, [3]300+
+    gender: -1, // How do you discribe yourself: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
+    sexOrientation: -1, // Do you consider yourself to be: [0]Heterosexual or Straight, [1]Gay, [2]Lesbian, [3]Bisexual
+    partnerGender: -1, // How do you discribe partner: [0]Woman, [1]Man, [2]Transgender, [3]Non-binary/non-conforming
+    
+    sexRomance: -1, // What would you like to use this box for: [0]For sex only, [1]For sex and building relationship, [2]For building relationship.
+    sti: -1, // Do you want to include an STI kit: [0]No, [1]Yes
+    bib: -1, // Do you want to include a "Breakfast In Bed" for your box: [0]Yes, come pre-cooked [1]Yes, come as raw with recipe [2]No
+
+    price: -1, // Choose a price-range for your box: [0]100~200, [1]200~300, [2]200~300, [3]300+
 }

@@ -40,7 +40,7 @@ h1 {
 /*for whole page slider*/
 html,
 body {
-	background-color: #292929;
+	background-color: black;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -211,17 +211,17 @@ body>.dg {
 }
 
 #orderForm {
-	width: 800px;
+	width: 60%;
 	background-color: rgb(30, 30, 30);
 	margin: auto;
 	padding: 20px;
 	box-shadow: #999;
-	font-family:'Times New Roman', Times, serif;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #formTitle {
 	text-align: center;
-	font-size: 30px;
+	font-size: 2rem;
 	color: white;
 }
 
@@ -235,7 +235,6 @@ body>.dg {
 	height: 450px;
 	width: 100%;
 	background-color: rgb(50, 50, 50);
-	overflow-y: scroll;
 }
 
 #formButtonGroup {
@@ -250,4 +249,22 @@ body>.dg {
 
 #nextButton {
 	float: right;
+}
+
+#basicForms {
+	padding:30px;
+}
+
+.questions {
+	/* margin-bottom: 20px; */
+	display: none;
+}
+
+.formSubtitle {
+	font-size: 1.75rem!important;
+	margin-bottom: 2rem;
+}
+
+.form-check {
+	font-size: 1.5rem!important;
 }
